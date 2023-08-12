@@ -16,7 +16,26 @@ import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 import { ShopsComponent } from './shops/shops.component';
 import {MatChipsModule} from '@angular/material/chips';
 import { ChennaiComponent } from './chennai/chennai.component';
+import { AvatarModule } from 'ngx-avatar';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatStepperModule } from '@angular/material/stepper';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { HotelsComponent } from './components/hotels/hotels.component';
+import { HotelCardComponent } from './components/hotel-card/hotel-card.component';
+import { HotelComponent } from './components/hotel/hotel.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { CartItemComponent } from './components/cart-item/cart-item.component';
+import { MenuItemComponent } from './components/menu-item/menu-item.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+
 
 
 @NgModule({
@@ -25,7 +44,16 @@ import { MatStepperModule } from '@angular/material/stepper';
     LoginComponent,
     UserComponent,
     ShopsComponent,
-    ChennaiComponent
+    ChennaiComponent,
+    NavBarComponent,
+    HotelsComponent,
+    HotelCardComponent,
+    HotelComponent,
+    DropdownComponent,
+    CartItemComponent,
+    MenuItemComponent,
+    SearchBarComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -38,6 +66,20 @@ import { MatStepperModule } from '@angular/material/stepper';
     MatToolbarModule,
     MatStepperModule,
     MatTooltipModule,
+    MatSelectModule,
+    MatIconModule,
+    MatProgressSpinnerModule,
+    MatInputModule,
+    MatBadgeModule,
+    MatDividerModule,
+    MatSidenavModule,
+    MatCardModule,
+    AvatarModule,
+    MatButtonModule,
+    MatSnackBar,
+    MatSnackBarConfig
+    
+
     
   ],
   providers: [{provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 2500}}],
